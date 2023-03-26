@@ -26,7 +26,7 @@ python check_images.py --dir [<image-folder-name/] --arch [architecture-type] --
 | **VGG**    |  100.0 %     |     100.0%     |    93.3%     |   87.5%   |
 
 
-**Tasks Questions and its answer regarding (uploaded_images) Classification:**
+**Tasks' Questions and its answer regarding (uploaded_images) Classification:**
 
 1. Did the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed? If not, report the differences in the classifications.
       - Answer: 
