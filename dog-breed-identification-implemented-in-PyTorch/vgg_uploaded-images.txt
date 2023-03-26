@@ -1,0 +1,89 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Cat_01.jpg  label:                        cat
+ 2 key:                     Dog_02.jpg  label:                        dog
+ 3 key:         Medicine_bottle_01.jpg  label:            medicine bottle
+ 4 key:                     Dog_01.jpg  label:                        dog
+
+     MATCH:
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:              egyptian cat, cat
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:             miniature pinscher
+
+        Medicine_bottle_01.jpg: 
+Real:            medicine bottle   Classifier:                   water bottle
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                     rottweiler
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+ The pet label- cat is NOT a Dog
+the classifier label- egyptian cat, cat is NOT a Dog 
+
+ The pet label- dog IS a Dog
+the classifier label- miniature pinscher IS a Dog 
+
+ The pet label- medicine bottle is NOT a Dog
+the classifier label- water bottle is NOT a Dog 
+
+ The pet label- dog IS a Dog
+the classifier label- rottweiler IS a Dog 
+
+
+     MATCH:
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:              egyptian cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:             miniature pinscher  
+PetLabelDog: 1  ClassLabelDog: 1
+
+        Medicine_bottle_01.jpg: 
+Real:            medicine bottle   Classifier:                   water bottle  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                     rottweiler  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+***Results Summary for CNN model architecture VGG ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+
+**Summary Statistics of Percentage on Model Run**
+Percentage of pct_match is 25.0%
+Percentage of pct_correct_dogs is 100.0%
+Percentage of pct_correct_breed is 0.0%
+Percentage of pct_correct_notdogs is 100.0%
+
+Misclassified/ Incorrect Dog Breed Assignment: 
+Real:                        dog    Classifier:             miniature pinscher
+Real:                        dog    Classifier:                     rottweiler
+
+** Total Elapsed Runtime: 0:0:3
