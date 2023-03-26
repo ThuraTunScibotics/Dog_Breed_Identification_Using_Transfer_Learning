@@ -15,8 +15,6 @@ python check_images.py --dir [<image-folder-name/] --arch [architecture-type] --
 
 
 |  Total Images  | 40 |
-|                |    |
 |   Dog Images   | 30 |
-|                |    |
 | Not Dog Images | 10 |
 
