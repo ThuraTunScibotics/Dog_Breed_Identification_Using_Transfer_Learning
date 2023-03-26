@@ -12,7 +12,11 @@ python check_images.py --dir [<image-folder-name/] --arch [architecture-type] --
 
 ### Classfication Results
 **classification on 'pet_images' folder**
-After training the model with `100 epochs`
+
+| -------------  | -- |
 |  Total Images  | 40 |
+| -------------  | -- |
 |   Dog Images   | 30 |
+| -------------  | -- |
 | Not Dog Images | 10 |
+| -------------  | -- |
