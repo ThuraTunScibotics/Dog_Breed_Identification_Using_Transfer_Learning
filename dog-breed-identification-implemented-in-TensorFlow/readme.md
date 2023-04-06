@@ -8,5 +8,11 @@ End-to-end multi-class Dog Breed Classification is implemented in [dog_vision.ip
    2. `Training` and `Validation` Split
    3. Turning images into `tensor` & resize the shape into (224, 224)
    4. Turning the images/data into `batches`
-   5. Training the model both on `subset of data` & `full data` for results-comparisons
-   6.
+   5. Create a Model
+   6. Add `TensorBoard_Callback` to save training log & `Early Stopping` to prevent overfitting
+   7. Training the model both on `subset of data` & `full data` for results-comparisons
+   8. Evaluate prediction using the trained model
+   9. Save & Load the model
+   10. Making the prediction on the `Test` dataset
+   11. Create `CSV` file containing prediction probability for each breed for kaggle submission
+   12. Prediction on Custom images
